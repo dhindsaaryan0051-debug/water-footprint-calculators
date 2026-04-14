@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Audit Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💧 Personal Water Audit</h1>
+        <p class="subtitle">See how your daily habits compare to global benchmarks.</p>
+        
+        <div class="input-group">
+            <label>🚿 Shower Time (minutes):</label>
+            <input type="number" id="shower" value="0">
+        </div>
+
+        <div class="input-group">
+            <label>🚽 Toilet Flushes (count):</label>
+            <input type="number" id="toilet" value="0">
+        </div>
+
+        <div class="input-group">
+            <label>🪥 Brushing (tap on/off minutes):</label>
+            <input type="number" id="brush" value="0">
+        </div>
+
+        <div class="input-group">
+            <label>🧺 Laundry Loads (per week):</label>
+            <input type="number" id="laundry" value="0">
+        </div>
+
+        <button onclick="calculateAudit()">Calculate Total Usage</button>
+
+        <div id="results-area" class="hidden">
+            <h2 id="total-liters">0 Liters</h2>
+            <div id="analysis-box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
